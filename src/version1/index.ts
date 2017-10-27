@@ -6,3 +6,4 @@ export { SmsSettingsSenecaClientV1 } from './SmsSettingsSenecaClientV1';
 export { SmsSettingsLambdaClientV1 } from './SmsSettingsLambdaClientV1';
 export { SmsSettingsDirectClientV1 } from './SmsSettingsDirectClientV1';
 export { SmsSettingsNullClientV1 } from './SmsSettingsNullClientV1';
+export { SmsSettingsMemoryClientV1 } from './SmsSettingsMemoryClientV1';

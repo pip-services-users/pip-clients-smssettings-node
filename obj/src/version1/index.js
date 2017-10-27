@@ -14,4 +14,6 @@ var SmsSettingsDirectClientV1_1 = require("./SmsSettingsDirectClientV1");
 exports.SmsSettingsDirectClientV1 = SmsSettingsDirectClientV1_1.SmsSettingsDirectClientV1;
 var SmsSettingsNullClientV1_1 = require("./SmsSettingsNullClientV1");
 exports.SmsSettingsNullClientV1 = SmsSettingsNullClientV1_1.SmsSettingsNullClientV1;
+var SmsSettingsMemoryClientV1_1 = require("./SmsSettingsMemoryClientV1");
+exports.SmsSettingsMemoryClientV1 = SmsSettingsMemoryClientV1_1.SmsSettingsMemoryClientV1;
 //# sourceMappingURL=index.js.map
