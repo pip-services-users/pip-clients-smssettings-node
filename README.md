@@ -7,6 +7,7 @@ It provides an easy to use abstraction over communication protocols:
 * Seneca client (see http://www.senecajs.org)
 * Direct client for monolythic deployments
 * Null client to be used in testing
+* Memory client to be used in testing
 
 <a name="links"></a> Quick Links:
 

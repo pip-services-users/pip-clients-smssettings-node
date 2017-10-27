@@ -6,6 +6,7 @@
 * **lambda** AWS lambda client
 * **direct** Direct client for monolythic deployments
 * **null** Null client for testing
+* **memory** Memory client for testing
 * **unit tests** Unit tests using Mocha and Matcha
 
 #### Breaking Changes
