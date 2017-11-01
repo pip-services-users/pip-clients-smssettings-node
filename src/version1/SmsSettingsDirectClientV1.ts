@@ -101,7 +101,7 @@ export class SmsSettingsDirectClientV1 extends DirectClient<any> implements ISms
     public verifyPhone(correlationId: string, recipientId: string, code: string,
         callback?: (err: any) => void): void {
         let timing = this.instrument(correlationId, 'sms_settings.verify_phone');
-        this._controller.verifySms(correlationId, recipientId, code, (err) => {
+        this._controller.verifyPhone(correlationId, recipientId, code, (err) => {
             timing.endTiming();
             if (callback) callback(err);
         });

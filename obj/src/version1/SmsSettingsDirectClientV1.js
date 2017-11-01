@@ -76,7 +76,7 @@ class SmsSettingsDirectClientV1 extends pip_services_net_node_1.DirectClient {
     }
     verifyPhone(correlationId, recipientId, code, callback) {
         let timing = this.instrument(correlationId, 'sms_settings.verify_phone');
-        this._controller.verifySms(correlationId, recipientId, code, (err) => {
+        this._controller.verifyPhone(correlationId, recipientId, code, (err) => {
             timing.endTiming();
             if (callback)
                 callback(err);
