@@ -25,6 +25,14 @@ class SmsSettingsMemoryClientV1 {
         if (callback)
             callback(null, settings);
     }
+    setVerifiedSettings(correlationId, settings, callback) {
+        settings.verified = true;
+        settings.subscriptions = settings.subscriptions || {};
+        this._settings = _.filter(this._settings, s => s.id != settings.id);
+        this._settings.push(settings);
+        if (callback)
+            callback(null, settings);
+    }
     setRecipient(correlationId, recipientId, name, phone, language, callback) {
         let settings = _.find(this._settings, s => s.id == recipientId);
         if (settings) {

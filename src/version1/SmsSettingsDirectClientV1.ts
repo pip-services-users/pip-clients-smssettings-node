@@ -58,6 +58,15 @@ export class SmsSettingsDirectClientV1 extends DirectClient<any> implements ISms
         });
     }
 
+    public setVerifiedSettings(correlationId: string, settings: SmsSettingsV1,
+        callback?: (err: any, settings: SmsSettingsV1) => void): void {
+        let timing = this.instrument(correlationId, 'sms_settings.set_verified_settings');
+        this._controller.setVerifiedSettings(correlationId, settings, (err, settings) => {
+            timing.endTiming();
+            if (callback) callback(err, settings);
+        });
+    }
+
     public setRecipient(correlationId: string, recipientId: string,
         name: string, phone: string, language: string,
         callback?: (err: any, settings: SmsSettingsV1) => void): void {

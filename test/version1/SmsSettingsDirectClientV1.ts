@@ -6,7 +6,7 @@ import { ConfigParams } from 'pip-services-commons-node';
 import { References } from 'pip-services-commons-node';
 import { ConsoleLogger } from 'pip-services-commons-node';
 
-import { SmsDeliveryNullClientV1 } from 'pip-clients-smsdelivery-node';
+import { SmsNullClientV1 } from 'pip-clients-sms-node';
 import { SmsSettingsMemoryPersistence } from 'pip-services-smssettings-node';
 import { SmsSettingsController } from 'pip-services-smssettings-node';
 import { ISmsSettingsClientV1 } from '../../src/version1/ISmsSettingsClientV1';
@@ -27,7 +27,7 @@ suite('SmsSettingsDirectClientV1', ()=> {
             new Descriptor('pip-services-commons', 'logger', 'console', 'default', '1.0'), logger,
             new Descriptor('pip-services-smssettings', 'persistence', 'memory', 'default', '1.0'), persistence,
             new Descriptor('pip-services-smssettings', 'controller', 'default', 'default', '1.0'), controller,
-            new Descriptor('pip-services-smsdelivery', 'client', 'null', 'default', '1.0'), new SmsDeliveryNullClientV1()
+            new Descriptor('pip-services-sms', 'client', 'null', 'default', '1.0'), new SmsNullClientV1()
         );
         controller.setReferences(references);
 

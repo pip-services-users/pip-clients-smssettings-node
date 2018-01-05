@@ -54,7 +54,7 @@
         "matcha": "*",
         "mocha": "*",
         "aws-sdk": "*",
-        "pip-clients-smsdelivery-node": "git+ssh://git@github.com:pip-services-infrastructure/pip-clients-smsdelivery-node.git",
+        "pip-clients-sms-node": "git+ssh://git@github.com:pip-services-infrastructure/pip-clients-sms-node.git",
         "pip-services-smssettings-node": "git+ssh://git@github.com:pip-services-users/pip-services-smssettings-node.git"
     }
 }

@@ -67,6 +67,18 @@ export class SmsSettingsLambdaClientV1 extends CommandableLambdaClient implement
         );
     }
 
+    public setVerifiedSettings(correlationId: string, settings: SmsSettingsV1,
+        callback?: (err: any, settings: SmsSettingsV1) => void): void {
+        this.callCommand(
+            'set_verified_settings',
+            correlationId,
+            {
+                settings: settings
+            },
+            callback
+        );
+    }
+
     public setRecipient(correlationId: string, recipientId: string,
         name: string, phone: string, language: string,
         callback?: (err: any, settings: SmsSettingsV1) => void): void {

@@ -14,6 +14,10 @@ class SmsSettingsNullClientV1 {
         if (callback)
             callback(null, settings);
     }
+    setVerifiedSettings(correlationId, settings, callback) {
+        if (callback)
+            callback(null, settings);
+    }
     setRecipient(correlationId, recipientId, name, phone, language, callback) {
         if (callback) {
             callback(null, {

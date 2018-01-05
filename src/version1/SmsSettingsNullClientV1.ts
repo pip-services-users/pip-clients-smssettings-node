@@ -28,6 +28,11 @@ export class SmsSettingsNullClientV1 implements ISmsSettingsClientV1 {
         if (callback) callback(null, settings);
     }
 
+    public setVerifiedSettings(correlationId: string, settings: SmsSettingsV1,
+        callback?: (err: any, settings: SmsSettingsV1) => void): void {
+        if (callback) callback(null, settings);
+    }
+
     public setRecipient(correlationId: string, recipientId: string,
         name: string, phone: string, language: string,
         callback?: (err: any, settings: SmsSettingsV1) => void): void {

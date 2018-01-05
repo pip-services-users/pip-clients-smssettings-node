@@ -36,6 +36,7 @@ export class SmsSettingsClientFixtureV1 {
                         assert.isObject(settings);
                         assert.equal(settings.id, SETTINGS.id);
                         assert.equal(settings.phone, SETTINGS.phone);
+                        assert.isFalse(settings.verified);
 
                         settings1 = settings;
 
@@ -43,7 +44,26 @@ export class SmsSettingsClientFixtureV1 {
                     }
                 );
             },
-        // Update the sms settings
+        // Create sms settings
+            (callback) => {
+                this._client.setVerifiedSettings(
+                    null,
+                    settings1,
+                    (err, settings) => {
+                        assert.isNull(err);
+                        
+                        assert.isObject(settings);
+                        assert.equal(settings.id, SETTINGS.id);
+                        assert.equal(settings.phone, SETTINGS.phone);
+                        assert.isTrue(settings.verified);
+
+                        settings1 = settings;
+
+                        callback();
+                    }
+                );
+            },
+    // Update the sms settings
             (callback) => {
                 settings1.subscriptions.engagement = true;
 

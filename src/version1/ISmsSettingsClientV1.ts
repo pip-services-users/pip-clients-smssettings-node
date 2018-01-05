@@ -18,6 +18,9 @@ export interface ISmsSettingsClientV1 {
     setSettings(correlationId: string, settings: SmsSettingsV1,
         callback?: (err: any, settings: SmsSettingsV1) => void): void;
 
+    setVerifiedSettings(correlationId: string, settings: SmsSettingsV1,
+        callback?: (err: any, settings: SmsSettingsV1) => void): void;
+            
     setRecipient(correlationId: string, recipientId: string,
         name: string, phone: string, language: string,
         callback?: (err: any, settings: SmsSettingsV1) => void): void;

@@ -42,6 +42,14 @@ class SmsSettingsDirectClientV1 extends pip_services_net_node_1.DirectClient {
                 callback(err, settings);
         });
     }
+    setVerifiedSettings(correlationId, settings, callback) {
+        let timing = this.instrument(correlationId, 'sms_settings.set_verified_settings');
+        this._controller.setVerifiedSettings(correlationId, settings, (err, settings) => {
+            timing.endTiming();
+            if (callback)
+                callback(err, settings);
+        });
+    }
     setRecipient(correlationId, recipientId, name, phone, language, callback) {
         let timing = this.instrument(correlationId, 'sms_settings.set_recipient');
         this._controller.setRecipient(correlationId, recipientId, name, phone, language, (err, settings) => {

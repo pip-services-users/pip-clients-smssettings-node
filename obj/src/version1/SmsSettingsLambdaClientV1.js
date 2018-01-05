@@ -30,6 +30,11 @@ class SmsSettingsLambdaClientV1 extends pip_services_aws_node_1.CommandableLambd
             settings: settings
         }, callback);
     }
+    setVerifiedSettings(correlationId, settings, callback) {
+        this.callCommand('set_verified_settings', correlationId, {
+            settings: settings
+        }, callback);
+    }
     setRecipient(correlationId, recipientId, name, phone, language, callback) {
         this.callCommand('set_recipient', correlationId, {
             recipient_id: recipientId,
