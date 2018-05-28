@@ -12,7 +12,7 @@ export class SmsSettingsHttpClientV1 extends CommandableHttpClient implements IS
     private _defaultParameters: ConfigParams;
 
     constructor(config?: any) {
-        super('sms_settings');
+        super('v1/sms_settings');
 
         let thisConfig = ConfigParams.fromValue(config);
         this._defaultParameters = thisConfig.getSection('parameters');
