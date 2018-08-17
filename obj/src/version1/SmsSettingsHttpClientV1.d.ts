@@ -1,4 +1,4 @@
-import { CommandableHttpClient } from 'pip-services-net-node';
+import { CommandableHttpClient } from 'pip-services-rpc-node';
 import { SmsSettingsV1 } from './SmsSettingsV1';
 import { ISmsSettingsClientV1 } from './ISmsSettingsClientV1';
 export declare class SmsSettingsHttpClientV1 extends CommandableHttpClient implements ISmsSettingsClientV1 {

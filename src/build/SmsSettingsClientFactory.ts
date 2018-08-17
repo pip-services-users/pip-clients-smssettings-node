@@ -1,5 +1,5 @@
 import { Descriptor } from 'pip-services-commons-node';
-import { Factory } from 'pip-services-commons-node';
+import { Factory } from 'pip-services-components-node';
 
 import { SmsSettingsNullClientV1 } from '../version1/SmsSettingsNullClientV1';
 import { SmsSettingsMemoryClientV1 } from '../version1/SmsSettingsMemoryClientV1';

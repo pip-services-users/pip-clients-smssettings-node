@@ -1,13 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const pip_services_commons_node_1 = require("pip-services-commons-node");
-const pip_services_commons_node_2 = require("pip-services-commons-node");
+const pip_services_components_node_1 = require("pip-services-components-node");
 const SmsSettingsNullClientV1_1 = require("../version1/SmsSettingsNullClientV1");
 const SmsSettingsMemoryClientV1_1 = require("../version1/SmsSettingsMemoryClientV1");
 const SmsSettingsDirectClientV1_1 = require("../version1/SmsSettingsDirectClientV1");
 const SmsSettingsHttpClientV1_1 = require("../version1/SmsSettingsHttpClientV1");
 const SmsSettingsSenecaClientV1_1 = require("../version1/SmsSettingsSenecaClientV1");
-class SmsSettingsClientFactory extends pip_services_commons_node_2.Factory {
+class SmsSettingsClientFactory extends pip_services_components_node_1.Factory {
     constructor() {
         super();
         this.registerAsType(SmsSettingsClientFactory.NullClientV1Descriptor, SmsSettingsNullClientV1_1.SmsSettingsNullClientV1);

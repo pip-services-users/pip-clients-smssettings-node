@@ -1,4 +1,4 @@
-import { CommandableSenecaClient } from 'pip-services-net-node';
+import { CommandableSenecaClient } from 'pip-services-seneca-node';
 import { SmsSettingsV1 } from './SmsSettingsV1';
 import { ISmsSettingsClientV1 } from './ISmsSettingsClientV1';
 export declare class SmsSettingsSenecaClientV1 extends CommandableSenecaClient implements ISmsSettingsClientV1 {

@@ -3,7 +3,7 @@ import { FilterParams } from 'pip-services-commons-node';
 import { PagingParams} from 'pip-services-commons-node';
 import { DataPage } from 'pip-services-commons-node';
 import { Descriptor } from 'pip-services-commons-node';
-import { DirectClient } from 'pip-services-net-node';
+import { DirectClient } from 'pip-services-rpc-node';
 
 import { ISmsSettingsClientV1 } from './ISmsSettingsClientV1';
 import { SmsSettingsV1 } from './SmsSettingsV1';
