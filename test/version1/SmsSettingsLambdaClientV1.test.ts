@@ -1,6 +1,6 @@
 let process = require('process');
 
-import { ConfigParams } from 'pip-services-commons-node';
+import { ConfigParams } from 'pip-services3-commons-node';
 
 import { SmsSettingsClientFixtureV1 } from './SmsSettingsClientFixtureV1';
 import { SmsSettingsLambdaClientV1 } from '../../src/version1/SmsSettingsLambdaClientV1';

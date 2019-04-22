@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const pip_services_commons_node_1 = require("pip-services-commons-node");
-const pip_services_rpc_node_1 = require("pip-services-rpc-node");
-class SmsSettingsHttpClientV1 extends pip_services_rpc_node_1.CommandableHttpClient {
+const pip_services3_commons_node_1 = require("pip-services3-commons-node");
+const pip_services3_rpc_node_1 = require("pip-services3-rpc-node");
+class SmsSettingsHttpClientV1 extends pip_services3_rpc_node_1.CommandableHttpClient {
     constructor(config) {
         super('v1/sms_settings');
-        let thisConfig = pip_services_commons_node_1.ConfigParams.fromValue(config);
+        let thisConfig = pip_services3_commons_node_1.ConfigParams.fromValue(config);
         this._defaultParameters = thisConfig.getSection('parameters');
         if (config != null)
             this.configure(thisConfig);

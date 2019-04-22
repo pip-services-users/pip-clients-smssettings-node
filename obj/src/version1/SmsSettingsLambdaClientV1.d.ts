@@ -1,4 +1,4 @@
-import { CommandableLambdaClient } from 'pip-services-aws-node';
+import { CommandableLambdaClient } from 'pip-services3-aws-node';
 import { SmsSettingsV1 } from './SmsSettingsV1';
 import { ISmsSettingsClientV1 } from './ISmsSettingsClientV1';
 export declare class SmsSettingsLambdaClientV1 extends CommandableLambdaClient implements ISmsSettingsClientV1 {

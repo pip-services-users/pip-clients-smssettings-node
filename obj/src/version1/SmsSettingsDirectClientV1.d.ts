@@ -1,4 +1,4 @@
-import { DirectClient } from 'pip-services-rpc-node';
+import { DirectClient } from 'pip-services3-rpc-node';
 import { ISmsSettingsClientV1 } from './ISmsSettingsClientV1';
 import { SmsSettingsV1 } from './SmsSettingsV1';
 export declare class SmsSettingsDirectClientV1 extends DirectClient<any> implements ISmsSettingsClientV1 {
