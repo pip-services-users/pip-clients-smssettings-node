@@ -1,6 +1,6 @@
 {
     "name": "pip-clients-smssettings-node",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Conceptual Vision Consulting LLC",
     "description": "Node.js client sdk for pip-services-smssettings microservice",
     "contributors": [
@@ -51,10 +51,8 @@
         "@types/mocha": "*",
         "restify": "^4.3.0",
         "chai": "*",
-        "matcha": "*",
         "mocha": "*",
-        "aws-sdk": "*",
-        "pip-clients-sms-node": "^1.0.0",
-        "pip-services-smssettings-node": "^1.0.1"
+        "pip-clients-sms-node": "^1.0.1",
+        "pip-services-smssettings-node": "^1.1.0"
     }
 }
